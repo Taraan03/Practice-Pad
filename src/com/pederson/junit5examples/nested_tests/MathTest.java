@@ -18,6 +18,11 @@ class MathTest {
 		void addIncorrect() {
 			assertEquals(2, Math.add(1, 2));
 		}
+
+		@Test
+		void addIncorrect2() {
+			assertEquals(5, Math.add(1, 2));
+		}
 	}
 
 	@Nested
@@ -30,6 +35,11 @@ class MathTest {
 		@Test
 		void subtractIncorrect() {
 			assertEquals(3, Math.subtract(3, 1));
+		}
+
+		@Test
+		void subtractIncorrect2() {
+			assertEquals(5, Math.subtract(3, 1));
 		}
 	}
 
