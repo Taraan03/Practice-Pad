@@ -20,4 +20,17 @@ class MathTest {
 		}
 	}
 
+	@Nested
+	class SubtractTests {
+		@Test
+		void subtract() {
+			assertEquals(3, Math.subtract(7, 4));
+		}
+
+		@Test
+		void subtractIncorrect() {
+			assertEquals(3, Math.subtract(3, 1));
+		}
+	}
+
 }
